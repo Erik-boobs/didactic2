@@ -1,0 +1,66 @@
+//CURSO
+
+###
+GET http://localhost:3000/curso/
+
+###
+GET http://localhost:3000/curso/3
+
+###
+POST http://localhost:3000/curso/
+Content-Type: application/json
+
+{
+    "nomCurso": "Sistemas Operativos",
+    "descripcion": "Curso de linux",
+    "temas": "Introduccion a linux",
+    "aprobacion": "1",
+    "activo": "0",
+    "autor": "EDME"
+}
+
+###
+DELETE http://localhost:3000/curso/8
+
+
+###
+PUT http://localhost:3000/curso/5
+Content-Type: application/json
+
+{
+    "aprobacion": "0",
+    "activo": "0"
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//AREA CONOCIMIENTO
+
+
+###
+GET http://localhost:3000/areaconocimiento/
+
+# ###
+# GET http://localhost:3000/areaconocimiento/1
+
+###
+POST http://localhost:3000/areaconocimiento/
+Content-Type: application/json
+
+{
+    "nombreArea": "Español",
+    "isActive": "0"
+}
+
+###
+DELETE http://localhost:3000/areaconocimiento/11
+
+
+###
+PUT http://localhost:3000/areaconocimiento/1
+Content-Type: application/json
+
+{
+    "nombreArea": "Calculo",
+    "isActive": "0"
+    
+}
